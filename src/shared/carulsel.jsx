@@ -43,7 +43,7 @@ export function CarouselDemo() {
 
 	const fetchPopularProducts = async () => {
 		try {
-			const res = await fetch('https://api.isab-security.com/popular-products')
+			const res = await fetch('https://api.isab-security.com/popular-products/')
 			const json = await res.json()
 			console.log(json)
 			setData(json)
