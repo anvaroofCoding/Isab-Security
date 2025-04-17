@@ -2,9 +2,9 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
-import tast1 from '../Assets/img/tast1.png'
 import tast3 from '../Assets/img/tast3.png'
 import tast2 from '../Assets/img/tast4.png'
+import tast1 from '../Assets/img/turniket.png'
 import { TracingBeam } from '../components/ui/tracing-beam'
 
 export function TracingBeamDemo() {

@@ -43,7 +43,7 @@ export const HoverEffect = ({ items, className }) => {
 					</AnimatePresence>
 					<Card>
 						<div>
-							<Image src={item.image} />
+							<Image src={item.image} alt='Isab-Securit' />
 							<CardTitle>{item.title}</CardTitle>
 						</div>
 						<CardDescription>{item.description}</CardDescription>
