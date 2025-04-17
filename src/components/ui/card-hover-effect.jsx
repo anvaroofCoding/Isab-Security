@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'motion/react'
+import Image from 'next/image'
 
 import { useState } from 'react'
 
@@ -42,6 +43,7 @@ export const HoverEffect = ({ items, className }) => {
 					</AnimatePresence>
 					<Card>
 						<div>
+							<Image src={item.image} />
 							<CardTitle>{item.title}</CardTitle>
 						</div>
 						<CardDescription>{item.description}</CardDescription>
@@ -68,9 +70,7 @@ export const Card = ({ className, children }) => {
 }
 export const CardTitle = ({ className, children }) => {
 	return (
-		<h4
-			className={cn('text-YellovCool font-bold tracking-wide mt-4', className)}
-		>
+		<h4 className={cn('text-white font-bold tracking-wide mt-4', className)}>
 			{children}
 		</h4>
 	)

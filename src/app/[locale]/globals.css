@@ -23,6 +23,7 @@
 @theme {
 	--color-blueCool: #004f9e;
 	--color-YellovCool: #ff8917;
+	/* --color-BlueMas: #00264B' */
 }
 .bg_img {
 	background-image: url(../../Assets/img/about.png);

@@ -18,14 +18,18 @@ export default async function Home({ locale }) {
 				<Section />
 				<TracingBeamDemo />
 			</div>
-			<div className='container md:h-[200px] h-[130px] pt-20 flex justify-between items-center md:flex-row flex-col text-white'>
-				<h2 className='md:text-[43px] font-bold text-[35px]'>{t('produc')}</h2>
-				<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
-					{t('katalog')}
-				</button>
-			</div>
-			<div className='xl:my-[40px] relative 1 my-[40px]'>
-				<CarouselDemo />
+			<div className='bg-[#00264B] py-10'>
+				<div className='container md:h-[200px] h-[200px] pt-20 flex gap-[20px] justify-between items-center md:flex-row flex-col text-white bg-[#00264B]'>
+					<h2 className='md:text-[43px] font-bold text-[35px]'>
+						{t('produc')}
+					</h2>
+					<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
+						{t('katalog')}
+					</button>
+				</div>
+				<div className='xl:my-[10px] relative 1 my-[40px] bg-[#00264B]'>
+					<CarouselDemo />
+				</div>
 			</div>
 			<div>
 				<About />
