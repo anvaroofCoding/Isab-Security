@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
     "@headlessui/react": "^2.2.1",
+    "@heroui/react": "^2.7.6",
     "@heroui/select": "^2.4.17",
     "@tabler/icons-react": "^3.31.0",
     "ant": "^0.0.0",

@@ -56,7 +56,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
 		<div className='[perspective:1200px] [transform-style:preserve-3d]'>
 			<li
 				ref={slideRef}
-				className='flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[40vmin] h-[40vmin] mx-[4vmin] z-10 '
+				className='flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[40vmin] h-[40vmin] mx-[4vmin] z-10  '
 				onClick={() => handleSlideClick(index)}
 				onMouseMove={handleMouseMove}
 				onMouseLeave={handleMouseLeave}
@@ -70,7 +70,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
 				}}
 			>
 				<div
-					className='absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[30px] overflow-hidden transition-all duration-150 ease-out'
+					className='absolute top-0  p-3 left-0 w-full h-full bg-[#1D1F2F] rounded-[30px] overflow-hidden transition-all duration-150 ease-out'
 					style={{
 						transform:
 							current === index
@@ -79,7 +79,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
 					}}
 				>
 					<img
-						className='absolute inset-0 w-[100%] h-[100%] object-cover opacity-100 transition-opacity duration-600 ease-in-out'
+						className='absolute inset-0 w-[100%] h-[100%] object-contain opacity-100 transition-opacity duration-600 ease-in-out'
 						style={{
 							opacity: current === index ? 1 : 0.5,
 						}}

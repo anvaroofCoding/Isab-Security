@@ -35,7 +35,7 @@ export function NavbarDemo() {
 	const navItems = [
 		{
 			name: t('home'),
-			link: '#features',
+			link: '/',
 		},
 		{
 			name: t('about'),
@@ -46,8 +46,8 @@ export function NavbarDemo() {
 			link: '#contact',
 		},
 		{
-			name: t('blog'),
-			link: '#contact',
+			name: t('Mahsulotlarimiz'),
+			link: '/katalog',
 		},
 		{
 			name: t('contact'),
