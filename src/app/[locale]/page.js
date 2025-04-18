@@ -1,5 +1,6 @@
 import About from '@/components/about'
 import Header from '@/components/header'
+import Map from '@/components/map'
 import NameCards from '@/components/NameCards'
 import Section from '@/components/section'
 import Tell from '@/components/tell'
@@ -47,6 +48,9 @@ export default async function Home({ locale }) {
 					<ZayavkaBtn />
 					<Tell />
 				</div>
+			</div>
+			<div>
+				<Map />
 			</div>
 		</div>
 	)

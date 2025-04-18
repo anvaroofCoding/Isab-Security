@@ -1,11 +1,12 @@
-'use client'
+import { createTranslator } from 'next-intl'
+import { getMessages } from 'next-intl/server'
 import Image from 'next/image'
-import { useTranslations } from 'use-intl'
 import headerImg from '../Assets/img/headerDesktop.png'
 import { TextGenerateEffectDemo } from './textDemo'
 
-const Header = () => {
-	const t = useTranslations()
+const Header = async ({ locale }) => {
+	const messages = await getMessages()
+	const t = createTranslator({ locale, messages })
 	return (
 		<div>
 			<div className='container xl:h-[800px] h-auto pb-20 grid grid-cols-1 xl:grid-cols-2 '>
