@@ -150,7 +150,7 @@ export function Carousel({ slides }) {
 
 	return (
 		<div
-			className='relative w-[70vmin] h-[40vmin] mx-auto'
+			className='relative w-[70vmin] h-[45vmin] mx-auto'
 			aria-labelledby={`carousel-heading-${id}`}
 		>
 			<ul

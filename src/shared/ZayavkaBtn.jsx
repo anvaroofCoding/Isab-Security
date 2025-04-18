@@ -46,7 +46,7 @@ const ZayavkaBtn = () => {
 		<div>
 			<Button
 				variant='solid'
-				size='middle'
+				size='large'
 				color='orange'
 				onClick={() => setIsModalOpen(true)}
 			>
