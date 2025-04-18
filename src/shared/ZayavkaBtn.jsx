@@ -42,6 +42,22 @@ const ZayavkaBtn = () => {
 		}
 	}
 
+	const [loadings, setLoadings] = useState([])
+	const enterLoading = index => {
+		setLoadings(prevLoadings => {
+			const newLoadings = [...prevLoadings]
+			newLoadings[index] = true
+			return newLoadings
+		})
+		setTimeout(() => {
+			setLoadings(prevLoadings => {
+				const newLoadings = [...prevLoadings]
+				newLoadings[index] = false
+				return newLoadings
+			})
+		}, 3000)
+	}
+
 	return (
 		<div>
 			<Button
@@ -87,7 +103,11 @@ const ZayavkaBtn = () => {
 						<span className='text-bold'>{t('shart')}</span>
 					</label>
 					<Button
-						onClick={handleSubmit}
+						onClick={() => {
+							enterLoading(0)
+							handleSubmit()
+						}}
+						loading={loadings[0]}
 						variant='solid'
 						size='middle'
 						color='orange'
