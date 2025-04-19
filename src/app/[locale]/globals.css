@@ -31,6 +31,17 @@
 	background-size: cover;
 }
 
+.bg-img2 {
+	background-image: url(../../Assets/img/service2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-img3 {
+	background-image: url(../../Assets/img/service3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .custom-modal .ant-modal-content {
 	background-color: rgba(255, 255, 255, 0.926); /* yoki siz xohlagan rang */
 }

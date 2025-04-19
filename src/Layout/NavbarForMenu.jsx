@@ -43,7 +43,7 @@ export function NavbarDemo() {
 		},
 		{
 			name: t('services'),
-			link: '#contact',
+			link: '/service',
 		},
 		{
 			name: t('Mahsulotlarimiz'),
