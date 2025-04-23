@@ -9,6 +9,7 @@ import { TracingBeamDemo } from '@/shared/TracingBeamDemo'
 import ZayavkaBtn from '@/shared/ZayavkaBtn'
 import { createTranslator } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import Link from 'next/link'
 
 export default async function Home({ locale }) {
 	const messages = await getMessages()
@@ -25,9 +26,11 @@ export default async function Home({ locale }) {
 					<h2 className='md:text-[43px] font-bold text-[35px]'>
 						{t('produc')}
 					</h2>
-					<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
-						{t('katalog')}
-					</button>
+					<Link href={'/katalog'}>
+						<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
+							{t('katalog')}
+						</button>
+					</Link>
 				</div>
 				<div className=' relative 1 bg-[#00264B]'>
 					<CarouselDemo />

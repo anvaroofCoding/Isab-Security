@@ -13,6 +13,7 @@
     "@headlessui/react": "^2.2.1",
     "@heroui/react": "^2.7.6",
     "@heroui/select": "^2.4.17",
+    "@next/font": "^14.2.15",
     "@tabler/icons-react": "^3.31.0",
     "ant": "^0.0.0",
     "antd": "^5.24.7",

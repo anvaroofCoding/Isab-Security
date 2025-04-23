@@ -1,5 +1,9 @@
 'use client'
 
+import { DownOutlined } from '@ant-design/icons'
+import { Dropdown, Space } from 'antd'
+import React from 'react'
+
 import { cn } from '@/lib/utils'
 import { IconMenu2, IconX } from '@tabler/icons-react'
 import {
@@ -8,9 +12,10 @@ import {
 	useMotionValueEvent,
 	useScroll,
 } from 'motion/react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import logos from '../../Assets/img/isabLogoSaytBar.svg'
 
 export const Navbar = ({ children, className }) => {
@@ -41,6 +46,44 @@ export const Navbar = ({ children, className }) => {
 
 export const NavItems = ({ items, className, onItemClick }) => {
 	const [hovered, setHovered] = useState(null)
+	const t = useTranslations()
+	const itemsss = [
+		{
+			key: '1',
+			label: (
+				<a rel='noopener noreferrer' href='/kamera'>
+					{t('kamera')}
+				</a>
+			),
+		},
+		{
+			key: '2',
+			label: (
+				<a rel='noopener noreferrer' href='/sistema'>
+					{t('turniket')}
+				</a>
+			),
+			// icon: <SmileOutlined />,
+			// disabled: true,
+		},
+		{
+			key: '3',
+			label: (
+				<a rel='noopener noreferrer' href='/elektr-montaj'>
+					{t('texnika')}
+				</a>
+			),
+			// disabled: true,
+		},
+		{
+			key: '4',
+			label: (
+				<a rel='noopener noreferrer' href='voditel'>
+					{t('voditel')}
+				</a>
+			),
+		},
+	]
 
 	return (
 		<motion.div
@@ -67,6 +110,14 @@ export const NavItems = ({ items, className, onItemClick }) => {
 					<span className='relative z-20'>{item.name}</span>
 				</Link>
 			))}
+			<Dropdown menu={{ items: itemsss }}>
+				<a onClick={e => e.preventDefault()}>
+					<Space>
+						<span className='text-[16px] font-bold ml-3'>{t('services')}</span>
+						<DownOutlined />
+					</Space>
+				</a>
+			</Dropdown>
 		</motion.div>
 	)
 }

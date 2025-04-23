@@ -3,6 +3,7 @@ import ZayavkaBtn from '@/shared/ZayavkaBtn'
 import Image from 'next/image'
 import rasm from '../../../Assets/img/prichka.svg'
 import img1 from '../../../Assets/img/service1.png'
+import img2 from '../../../Assets/img/service4.png'
 
 const Page = () => {
 	return (
@@ -70,9 +71,48 @@ const Page = () => {
 				</div>
 			</div>
 			<div className='bg-img3 my-[100px] w-full'>
-				<div className='container h-[400px] grid grid-cols-2'>
-					<div className='border'></div>
-					<div className='border'></div>
+				<div className='container h-auto grid py-10 gap-[20px] lg:grid-cols-2 text-white pl-5 grid-cols-1'>
+					<div className='flex justify-center items-start flex-col'>
+						<div className='pl-2 border-l-3 border-YellovCool'>
+							<h2 className='font-bold text-[30px] lg:text-[41px]'>Персонал</h2>
+							<p className='lg:text-[26px] text-[18px]'>
+								Lorem ipsum dolor sit amet, consectetuer{' '}
+							</p>
+						</div>
+						<div className='grid lg:grid-cols-2 grid-cols-1 gap-[20px] px-2 mt-[30px]'>
+							<div className=''>
+								<h2 className='font-bold text-[20px]'>Lorem ipsum </h2>
+								<p className='text-[12px]'>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+									diam nonummy nibh euismod tincidunt ut laoreet dolore
+								</p>
+							</div>
+							<div className=''>
+								<h2 className='font-bold text-[20px]'>Lorem ipsum </h2>
+								<p className='text-[12px]'>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+									diam nonummy nibh euismod tincidunt ut laoreet dolore
+								</p>
+							</div>
+							<div className=''>
+								<h2 className='font-bold text-[20px]'>Lorem ipsum </h2>
+								<p className='text-[12px]'>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+									diam nonummy nibh euismod tincidunt ut laoreet dolore
+								</p>
+							</div>
+							<div className=''>
+								<h2 className='font-bold text-[20px]'>Lorem ipsum </h2>
+								<p className='text-[12px]'>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+									diam nonummy nibh euismod tincidunt ut laoreet dolore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className=' flex justify-center items-center'>
+						<Image src={img2} alt='isab-security' />
+					</div>
 				</div>
 			</div>
 		</div>

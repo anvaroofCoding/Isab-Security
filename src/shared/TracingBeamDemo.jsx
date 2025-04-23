@@ -2,6 +2,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
+import tast5 from '../Assets/images/headerKameraCopy1.png'
 import tast2 from '../Assets/img/pojarniy.svg'
 import tast3 from '../Assets/img/tast3.png'
 import tast1 from '../Assets/img/turniket.png'
@@ -12,13 +13,23 @@ export function TracingBeamDemo() {
 
 	const dummyContent = [
 		{
-			title: t('access_title'),
+			title: t('kamera'),
 			description: (
 				<>
 					<p>{t('access_desc')}</p>
 				</>
 			),
 			badge: '1',
+			image: tast5,
+		},
+		{
+			title: t('access_title'),
+			description: (
+				<>
+					<p>{t('access_desc')}</p>
+				</>
+			),
+			badge: '2',
 			image: tast1,
 		},
 		{
@@ -28,7 +39,7 @@ export function TracingBeamDemo() {
 					<p>{t('signal_desc')}</p>
 				</>
 			),
-			badge: '2',
+			badge: '3',
 			image: tast2,
 		},
 		{
@@ -38,7 +49,7 @@ export function TracingBeamDemo() {
 					<p>{t('support_desc')}</p>
 				</>
 			),
-			badge: '3',
+			badge: '4',
 			image: tast3,
 		},
 	]
@@ -59,8 +70,8 @@ export function TracingBeamDemo() {
 								<Image
 									src={item.image}
 									alt='blog thumbnail'
-									height='1000'
-									width='1000'
+									height='500'
+									width='500'
 									className='rounded-lg mb-10 object-cover'
 								/>
 							)}

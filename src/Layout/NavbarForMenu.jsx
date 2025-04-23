@@ -1,10 +1,4 @@
 'use client'
-import { useTranslations } from 'next-intl'
-import { GrInstagram } from 'react-icons/gr'
-import { LiaTelegramPlane } from 'react-icons/lia'
-import { SiYoutubekids } from 'react-icons/si'
-import isab from '../Assets/img/isabLogoSaytBar.svg'
-
 import {
 	MobileNav,
 	MobileNavHeader,
@@ -15,9 +9,17 @@ import {
 	// NavBody,
 	NavItems,
 } from '@/components/ui/resizable-navbar'
+import { DownOutlined } from '@ant-design/icons'
+import { Dropdown, Space } from 'antd'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import { useEffect, useState } from 'react'
+import { GrInstagram } from 'react-icons/gr'
+import { LiaTelegramPlane } from 'react-icons/lia'
+import { SiYoutubekids } from 'react-icons/si'
+import isab from '../Assets/img/isabLogoSaytBar.svg'
 import LangSwitch from './langSwitch'
 
 export function NavbarDemo() {
@@ -39,11 +41,7 @@ export function NavbarDemo() {
 		},
 		{
 			name: t('about'),
-			link: '#pricing',
-		},
-		{
-			name: t('services'),
-			link: '/service',
+			link: '/about',
 		},
 		{
 			name: t('Mahsulotlarimiz'),
@@ -57,6 +55,40 @@ export function NavbarDemo() {
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+	const itemsss = [
+		{
+			key: '1',
+			label: (
+				<a target='_blank' rel='noopener noreferrer' href='/kamera'>
+					Установка
+					{/* камер видеонаблюдения */}
+				</a>
+			),
+		},
+		{
+			key: '2',
+			label: (
+				<a target='_blank' rel='noopener noreferrer' href='/sistema'>
+					{t('kamera')}
+				</a>
+			),
+			// icon: <SmileOutlined />,
+			// disabled: true,
+		},
+		{
+			key: '3',
+			label: (
+				<a target='_blank' rel='noopener noreferrer' href='/elektr-montaj'>
+					{t('texnika')}
+				</a>
+			),
+		},
+		// {
+		// 	key: '4',
+		// 	danger: true,
+		// 	label: 'a danger item',
+		// },
+	]
 	return (
 		<div className='relative w-full z-50 '>
 			<Navbar>
@@ -134,6 +166,18 @@ export function NavbarDemo() {
 									<span className='block'>{item.name}</span>
 								</a>
 							))}
+							<div>
+								<Dropdown menu={{ items: itemsss }}>
+									<a onClick={e => e.preventDefault()}>
+										<Space>
+											<span className='text-[16px] font-bold ml-3'>
+												{t('services')}
+											</span>
+											<DownOutlined />
+										</Space>
+									</a>
+								</Dropdown>
+							</div>
 							<div className='flex w-full flex-col gap-4'>
 								<LangSwitch />
 							</div>

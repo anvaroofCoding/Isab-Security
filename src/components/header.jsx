@@ -1,6 +1,7 @@
 import { createTranslator } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Image from 'next/image'
+import Link from 'next/link'
 import headerImg from '../Assets/img/headerDesktop.png'
 import { TextGenerateEffectDemo } from './textDemo'
 
@@ -21,9 +22,11 @@ const Header = async ({ locale }) => {
 					<p className='text-white/60 w-[60%] text-[12px] md:text-[20px] '>
 						{t('headerText')}
 					</p>
-					<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
-						{t('btn')}
-					</button>
+					<Link href={'/katalog'}>
+						<button className='px-5 py-3 bg-YellovCool rounded-[20px] font-[700] hover:bg-YellovCool/80 duration-300 active:bg-YellovCool/60 text-white'>
+							{t('btn')}
+						</button>
+					</Link>
 				</div>
 				<div className=' hidden justify-center items-center xl:flex '>
 					<Image src={headerImg} alt='...' className='' />
