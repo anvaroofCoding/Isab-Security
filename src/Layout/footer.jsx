@@ -22,7 +22,7 @@ const Footer = async ({ locale }) => {
 							{t('description')}
 						</h2>
 					</div>
-					<div className='flex items-center gap-4 relative z-50'>
+					<div className='flex items-center gap-4 relative z-20'>
 						<Link
 							href={
 								'https://www.instagram.com/kamerachi.uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
