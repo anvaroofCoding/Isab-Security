@@ -6,6 +6,7 @@ const nextConfig = {
 		domains: ['assets.aceternity.com'],
 		domains: ['images.unsplash.com'],
 	},
+	devIndicators: false,
 }
 
 const intelPlugin = createNextIntlPlugin()
