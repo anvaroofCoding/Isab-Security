@@ -49,7 +49,7 @@ export function NavbarDemo() {
 		},
 		{
 			name: t('contact'),
-			link: '#contact',
+			link: '/contact',
 		},
 	]
 

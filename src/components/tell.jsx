@@ -4,9 +4,9 @@ import Link from 'next/link'
 const Tell = async () => {
 	return (
 		<div>
-			<Link href={'tel:+998958451255'}>
+			<Link href={'tel:+998335551255'}>
 				<Button variant='solid' color='orange' size='large'>
-					+99895 845 12 55
+					+998 33 555 12 55
 				</Button>
 			</Link>
 		</div>

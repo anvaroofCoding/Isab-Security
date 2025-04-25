@@ -48,17 +48,22 @@ const Footer = async ({ locale }) => {
 					<ul className='flex flex-col gap-[15px] font-semibold'>
 						<li>
 							<p className='hover:text-YellovCool duration-200'>
-								{t('contacts')}
+								{t('contacts')}:
 							</p>
-							<Link href={'tel:+99895 845 12 55'}>
+							<Link href={'tel:+99833 555 12 55'}>
 								<p className='underline hover:text-YellovCool duration-200'>
-									+99895 845 12 55
+									🇺🇿 +99833 555 12 55
+								</p>
+							</Link>
+							<Link href={'tel:+9987 7085551255'}>
+								<p className='underline hover:text-YellovCool duration-200'>
+									🇰🇿 +7 708 555 12 55
 								</p>
 							</Link>
 						</li>
 						<li>
 							<p className='hover:text-YellovCool duration-200'>
-								{t('order_call')}
+								{t('Write to us')}
 							</p>
 							<p className='hover:text-YellovCool duration-200'>
 								isabsecurity@gmail.com
