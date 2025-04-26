@@ -18,8 +18,9 @@ const Footer = async ({ locale }) => {
 						<Image src={logo} alt='kamera, isab-security, damafon' />
 						<hr className='lg:w-[50%] border-white/40' />
 						<h2 className='lg:w-[60%]'>
-							<span className='text-YellovCool font-bold'>{t('fotname')}</span>{' '}
-							{t('description')}
+							<span className='text-YellovCool font-bold'>{t('fotname')}</span>
+							{' - '}
+							{t('company_intro')}
 						</h2>
 					</div>
 					<div className='flex items-center gap-4 relative z-20'>

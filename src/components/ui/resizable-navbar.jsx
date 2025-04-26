@@ -78,8 +78,8 @@ export const NavItems = ({ items, className, onItemClick }) => {
 		{
 			key: '4',
 			label: (
-				<a rel='noopener noreferrer' href='voditel'>
-					{t('voditel')}
+				<a rel='noopener noreferrer' href='/Pojarniy'>
+					{t('signal_title')}
 				</a>
 			),
 		},

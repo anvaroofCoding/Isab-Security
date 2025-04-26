@@ -67,7 +67,7 @@ const Page = async ({ locale }) => {
 				<p className='md:text-[23px] text-[15px] font-[500] md:w-[60%] w-full'>
 					{t('number')}
 				</p>
-				<div className='flex lg:justify-center items-start lg:flex-row flex-col justify-center lg:gap-[40px] gap-[20px] w-full'>
+				<div className='flex lg:justify-start items-start lg:flex-row flex-col justify-center lg:gap-[40px] gap-[20px] w-full'>
 					<ZayavkaBtn />
 					<Tell />
 				</div>

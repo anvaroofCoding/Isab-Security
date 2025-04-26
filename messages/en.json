@@ -98,5 +98,13 @@
 	"district_chilanzar": "Chilanzar district",
 	"address_arnasay": "7A Arnasoy Street",
 	"working_hours": "Mon–Sat 09:00–18:00",
-	"working_time": "Working hours"
+	"working_time": "Working hours",
+	"hourerer": "asasab",
+	"company_intro": "Your reliable partner in comprehensive security. We provide modern solutions for video surveillance, access control, fire safety, and automation. We work turnkey — from design to installation and technical support.",
+	"fire_security_alarm": "Fire and security alarm system",
+	"smart_alarm_description": "We install intelligent systems that instantly respond to threats such as intrusion, smoke, or fire. Timely alerts and integration with other security systems are ensured.",
+	"audit_and_design": "Site audit and system design",
+	"sensor_installation": "Installation of sensors, sirens, and control panels",
+	"integration_with_security": "Integration with security and alert systems",
+	"response_scenarios": "Configuration of response scenarios"
 }

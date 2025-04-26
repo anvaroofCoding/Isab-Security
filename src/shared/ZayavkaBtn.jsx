@@ -1,5 +1,5 @@
 'use client'
-import { Button, message, Modal } from 'antd'
+import { Button, Modal } from 'antd'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 
@@ -35,7 +35,7 @@ const ZayavkaBtn = () => {
 			if (!res.ok) throw new Error('So‘rov muvaffaqiyatsiz bo‘ldi')
 
 			const data = await res.json()
-			message.success('Muvaffaqiyatli Bajarildi')
+			// message.success('Muvaffaqiyatli Bajarildi')
 			setIsModalOpen(false) // muvaffaqiyatli yuborilgach modalni yopish
 		} catch (error) {
 			console.error('❌ Xatolik:', error)

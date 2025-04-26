@@ -59,8 +59,8 @@ export function NavbarDemo() {
 		{
 			key: '1',
 			label: (
-				<a target='_blank' rel='noopener noreferrer' href='/kamera'>
-					Установка
+				<a rel='noopener noreferrer' href='/kamera'>
+					{t('kamera')}
 					{/* камер видеонаблюдения */}
 				</a>
 			),
@@ -68,8 +68,8 @@ export function NavbarDemo() {
 		{
 			key: '2',
 			label: (
-				<a target='_blank' rel='noopener noreferrer' href='/sistema'>
-					{t('kamera')}
+				<a rel='noopener noreferrer' href='/sistema'>
+					{t('turniket')}
 				</a>
 			),
 			// icon: <SmileOutlined />,
@@ -78,8 +78,16 @@ export function NavbarDemo() {
 		{
 			key: '3',
 			label: (
-				<a target='_blank' rel='noopener noreferrer' href='/elektr-montaj'>
+				<a rel='noopener noreferrer' href='/elektr-montaj'>
 					{t('texnika')}
+				</a>
+			),
+		},
+		{
+			key: '4',
+			label: (
+				<a rel='noopener noreferrer' href='/elektr-montaj'>
+					{t('signal_title')}
 				</a>
 			),
 		},

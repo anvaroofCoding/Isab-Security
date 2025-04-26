@@ -99,5 +99,12 @@
 	"district_chilanzar": "Chilonzor tumani",
 	"address_arnasay": "Arnasoy ko‘chasi, 7A-uy",
 	"working_hours": "du-sh 09:00–18:00",
-	"working_time": "Ish vaqti"
+	"working_time": "Ish vaqti",
+	"company_intro": "Kompleks xavfsizlik sohasidagi ishonchli hamkoringiz. Biz videokuzatuv, kirishni boshqarish, yong‘inga qarshi xavfsizlik va avtomatika bo‘yicha zamonaviy yechimlar taklif qilamiz. Loyihalashdan boshlab o‘rnatish va texnik qo‘llab-quvvatlashgacha — hammasi “kalit topshirish” asosida.",
+	"fire_security_alarm": "Yong‘in va xavfsizlik signalizatsiyasi",
+	"smart_alarm_description": "Biz tahdidga darhol javob beradigan aqlli tizimlarni o‘rnatamiz: noqonuniy kirish, tutun chiqishi, yong‘in. O‘z vaqtida ogohlantirish va boshqa xavfsizlik tizimlari bilan integratsiya ta'minlanadi.",
+	"audit_and_design": "Obyekt auditi va tizimni loyihalash",
+	"sensor_installation": "Datchiklar, sirenalar va boshqaruv panellarini o‘rnatish",
+	"integration_with_security": "Xavfsizlik va ogohlantirish tizimlari bilan integratsiya",
+	"response_scenarios": "Javob berish ssenariylarini sozlash"
 }
