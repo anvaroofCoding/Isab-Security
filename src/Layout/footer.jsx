@@ -72,10 +72,13 @@ const Footer = async ({ locale }) => {
 						</li>
 						<li>
 							<p className='hover:text-YellovCool duration-200'>
-								{t('contact_us')}
+								{t('addresses')}:
 							</p>
 							<p className='hover:text-YellovCool duration-200'>
-								{t('address')}
+								🇺🇿 {t('address')}
+							</p>
+							<p className='hover:text-YellovCool duration-200'>
+								🇰🇿 {t('addresskz')}
 							</p>
 						</li>
 					</ul>

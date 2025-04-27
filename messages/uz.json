@@ -106,5 +106,7 @@
 	"audit_and_design": "Obyekt auditi va tizimni loyihalash",
 	"sensor_installation": "Datchiklar, sirenalar va boshqaruv panellarini o‘rnatish",
 	"integration_with_security": "Xavfsizlik va ogohlantirish tizimlari bilan integratsiya",
-	"response_scenarios": "Javob berish ssenariylarini sozlash"
+	"response_scenarios": "Javob berish ssenariylarini sozlash",
+	"addresses": "Bizning manzillar",
+	"addresskz": "Shymkent, Tauke Xon ko'chasi, 163-uy"
 }
