@@ -4,13 +4,12 @@ import Map from '@/components/map'
 import NameCards from '@/components/NameCards'
 import Section from '@/components/section'
 import Tell from '@/components/tell'
-import { CarouselDemo } from '@/shared/carulsel'
+import ProductCarousel from '@/shared/productCarusel'
 import { TracingBeamDemo } from '@/shared/TracingBeamDemo'
 import ZayavkaBtn from '@/shared/ZayavkaBtn'
 import { createTranslator } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Head from 'next/head'
-import Link from 'next/link'
 
 export const metadata = {
 	title: 'ISAB Security - Kompleks xavfsizlik tizimlari',
@@ -45,7 +44,7 @@ export default async function Home({ locale }) {
 					<TracingBeamDemo />
 				</div>
 				<div className='bg-[#00264B] py-5'>
-					<div className='container md:h-[200px] h-[130px] flex gap-[20px] justify-between items-center md:flex-row flex-col text-white bg-[#00264B]'>
+					{/* <div className='container md:h-[200px] h-[130px] flex gap-[20px] justify-between items-center md:flex-row flex-col text-white bg-[#00264B]'>
 						<h2 className='md:text-[43px] font-bold text-[35px]'>
 							{t('produc')}
 						</h2>
@@ -54,9 +53,9 @@ export default async function Home({ locale }) {
 								{t('katalog')}
 							</button>
 						</Link>
-					</div>
+					</div> */}
 					<div className=' relative 1 bg-[#00264B]'>
-						<CarouselDemo />
+						<ProductCarousel />
 					</div>
 				</div>
 				<div>

@@ -5,6 +5,7 @@ const nextConfig = {
 	images: {
 		domains: ['assets.aceternity.com'],
 		domains: ['images.unsplash.com'],
+		domains: ['res.cloudinary.com'],
 	},
 	devIndicators: false,
 }
