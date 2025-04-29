@@ -9,33 +9,33 @@ const inter = Inter({
 	Weight: ['400', '700', '800', '900'],
 })
 
+// app/[locale]/layout.js yoki page.js ichida
 export const metadata = {
-	title: 'Isab Security',
-	keywords:
-		'ISAB Security, videokuzatuv, xavfsizlik, signalizatsiya, kompleks tizimlar',
-	description:
-		'Biz videokuzatuv, kirishni boshqarish, yong‘inga qarshi himoya va avtomatlashtirish bo‘yicha zamonaviy yechimlar taqdim etamiz.',
-	icons: {
-		icon: '/tt.svg',
-	},
+	title: 'ISAB Security',
+	description: 'Kompleks xavfsizlik tizimlari va xizmatlari',
 	openGraph: {
 		title: 'ISAB Security',
 		description: 'Kompleks xavfsizlik tizimlari va xizmatlari',
-		url: 'https://isab-security.uz',
+		url: 'https://isab-security.uz/uz',
 		siteName: 'ISAB Security',
 		images: [
 			{
-				url: '../../../public/tt.svg',
+				url: 'https://isab-security.uz/tt.svg',
 				width: 800,
 				height: 600,
-				alt: 'ISAB Security kompaniyasi',
+				alt: 'ISAB Security logotipi',
 			},
 		],
 		locale: 'uz_UZ',
 		type: 'website',
 	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'ISAB Security',
+		description: 'Kompleks xavfsizlik tizimlari va xizmatlari',
+		images: ['https://isab-security.uz/tt.svg'],
+	},
 }
-
 export default async function RootLayout({ children, params }) {
 	const { locale } = await params
 

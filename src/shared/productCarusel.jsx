@@ -33,6 +33,21 @@ const PrevArrow = props => {
 }
 
 const ProductCarousel = () => {
+	const [loadings, setLoadings] = useState([])
+	const enterLoading = index => {
+		setLoadings(prevLoadings => {
+			const newLoadings = [...prevLoadings]
+			newLoadings[index] = true
+			return newLoadings
+		})
+		setTimeout(() => {
+			setLoadings(prevLoadings => {
+				const newLoadings = [...prevLoadings]
+				newLoadings[index] = false
+				return newLoadings
+			})
+		}, 3000)
+	}
 	const [products, setProducts] = useState([])
 	const t = useTranslations()
 	const param = useParams()
