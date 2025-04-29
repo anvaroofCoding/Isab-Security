@@ -10,7 +10,7 @@ const Header = async ({ locale }) => {
 	const t = createTranslator({ locale, messages })
 	return (
 		<div>
-			<div className='container xl:h-[800px] h-auto pb-20 grid grid-cols-1 xl:grid-cols-2 '>
+			<div className='container xl:mt-0 pt-10 xl:h-[800px] h-auto pb-20 grid grid-cols-1 xl:grid-cols-2 '>
 				<div className=' flex justify-center items-center xl:hidden'>
 					<Image src={headerImg} alt='...' className='w-full' />
 				</div>

@@ -28,7 +28,7 @@ const LangSwitch = () => {
 			<select
 				onChange={switchHandle}
 				value={selectedLang}
-				className='appearance-none w-full text-center text-lg font-semibold lg:text-white bg-white/10 backdrop-blur-xl border lg:border-white/30 rounded-xl py-1 px-3 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-400 animate-slide-up border-black/20 cursor-pointer '
+				className='appearance-none w-full text-center text-[17px] font-semibold lg:text-white bg-white/10 backdrop-blur-xl border lg:border-white/30 rounded-xl py-1 px-3 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-400 animate-slide-up border-black/20 cursor-pointer '
 				// style='animation: slideUp 0.4s ease-out forwards;'
 			>
 				<option
