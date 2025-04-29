@@ -22,39 +22,39 @@ const Page = async ({ locale }) => {
 			<div className='container  grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[40px] py-[100px]'>
 				<div className=' h-[220px] flex flex-col'>
 					<div className='w-full h-[50%]  flex justify-center items-center'>
-						<Image src={img1} alt='isab' />
+						<Image src={img1} alt='isab' className='w-[20%]' />
 					</div>
 					<div className='w-full h-[50%] text-white text-center'>
 						<Link href={'tel:+99833 555 12 55'}>
-							<h2 className='font-bold text-[25px]'>+998 33 555 12 55</h2>
+							<h2 className='font-bold text-[20px]'>+998 33 555 12 55</h2>
 						</Link>
 						<p className='text-[18px] text-gray-500'>{t('call_us')}</p>
 					</div>
 				</div>
 				<div className=' h-[220px] flex flex-col'>
 					<div className='w-full h-[50%]  flex justify-center items-center'>
-						<Image src={img2} alt='isab' />
+						<Image src={img2} alt='isab' className='w-[20%]' />
 					</div>
 					<div className='w-full h-[50%] text-center text-white'>
-						<h2 className='font-bold text-[25px]'>isabsecurity@gmail.com</h2>
+						<h2 className='font-bold text-[20px]'>isabsecurity@gmail.com</h2>
 						<p className='text-[18px] text-gray-500'>{t('write_us_email')}</p>
 					</div>
 				</div>
 				<div className=' h-[220px] flex flex-col'>
 					<div className='w-full h-[50%] flex justify-center items-center'>
-						<Image src={img3} alt='isab' />
+						<Image src={img3} alt='isab' className='w-[20%]' />
 					</div>
 					<div className='w-full h-[50%]  text-center text-white'>
-						<h2 className='font-bold text-[25px]'>{t('district_chilanzar')}</h2>
+						<h2 className='font-bold text-[20px]'>{t('district_chilanzar')}</h2>
 						<p className='text-[18px] text-gray-500'>{t('address_arnasay')}</p>
 					</div>
 				</div>
 				<div className=' h-[220px] flex flex-col'>
 					<div className='w-full h-[50%]  flex justify-center items-center'>
-						<Image src={img4} alt='isab' />
+						<Image src={img4} alt='isab' className='w-[20%]' />
 					</div>
 					<div className='w-full h-[50%]  text-white text-center'>
-						<h2 className='font-bold text-[25px]'>{t('working_hours')}</h2>
+						<h2 className='font-bold text-[20px]'>{t('working_hours')}</h2>
 						<p className='text-[18px] text-gray-500'>{t('working_time')}</p>
 					</div>
 				</div>

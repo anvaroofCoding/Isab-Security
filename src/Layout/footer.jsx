@@ -33,7 +33,7 @@ const Footer = async ({ locale }) => {
 								<GrInstagram />
 							</li>
 						</Link>
-						<Link href={'/'}>
+						<Link href={'https://t.me/+jWDBEORNmhllMGQy'}>
 							<li className='list-none w-[30px] h-[30px] flex items-center justify-center rounded-[50%] bg-white border border-black/30 text-black duration-200 maz-animate hover:bg-white/60'>
 								<LiaTelegramPlane />
 							</li>
@@ -74,12 +74,24 @@ const Footer = async ({ locale }) => {
 							<p className='hover:text-YellovCool duration-200'>
 								{t('addresses')}:
 							</p>
-							<p className='hover:text-YellovCool duration-200'>
-								🇺🇿 {t('address')}
-							</p>
-							<p className='hover:text-YellovCool duration-200'>
-								🇰🇿 {t('addresskz')}
-							</p>
+							<Link
+								href={
+									'https://yandex.uz/maps/org/isab_security/192432070177/?from=mapframe&ll=69.228838%2C41.282162&z=16'
+								}
+							>
+								<p className='hover:text-YellovCool duration-200'>
+									🇺🇿 {t('address')}
+								</p>
+							</Link>
+							<Link
+								href={
+									'https://yandex.uz/maps/org/isab_security/192432070177/?from=mapframe&ll=69.228838%2C41.282162&z=16'
+								}
+							>
+								<p className='hover:text-YellovCool duration-200'>
+									🇰🇿 {t('addresskz')}
+								</p>
+							</Link>
 						</li>
 					</ul>
 				</div>

@@ -113,7 +113,7 @@ const Navbar = () => {
 									<GrInstagram />
 								</li>
 							</Link>
-							<Link href={'/'}>
+							<Link href={'https://t.me/+jWDBEORNmhllMGQy'}>
 								<li className='list-none w-[30px] h-[30px] flex items-center justify-center rounded-[50%] bg-white border border-black/30 text-black duration-200 maz-animate hover:bg-white/60'>
 									<LiaTelegramPlane />
 								</li>

@@ -89,7 +89,7 @@ const ProductCarousel = () => {
 	return (
 		<div className='w-full py-10  relative '>
 			<div className='max-w-[1400px] mx-auto px-10'>
-				<h2 className='text-3xl font-bold text-center text-white mb-8'>
+				<h2 className='text-[40px] font-bold text-center text-white mb-8'>
 					{t('produc')}
 				</h2>
 
